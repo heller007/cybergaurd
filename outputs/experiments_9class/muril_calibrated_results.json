@@ -1,0 +1,34 @@
+{
+  "checkpoint": "outputs/checkpoints_category_filtered_muril/best_model.pt",
+  "val": {
+    "argmax_macro_f1": 0.5755,
+    "calibrated_macro_f1": 0.5848
+  },
+  "test": {
+    "argmax_macro_f1": 0.5813,
+    "calibrated_macro_f1": 0.5826,
+    "calibrated_weighted_f1": 0.7009
+  },
+  "thresholds": [
+    0.01,
+    0.4699999999999999,
+    0.01,
+    0.01,
+    0.18999999999999997,
+    0.22999999999999998,
+    0.01,
+    0.01,
+    0.08999999999999998
+  ],
+  "cat_classes": [
+    "Any Other Cyber Crime",
+    "Child Pornography CPChild Sexual Abuse Material CSAM",
+    "Cryptocurrency Crime",
+    "Cyber Attack/ Dependent Crimes",
+    "Hacking  Damage to computercomputer system etc",
+    "Online Financial Fraud",
+    "Online and Social Media Related Crime",
+    "RapeGang Rape RGRSexually Abusive Content",
+    "Sexually Obscene material"
+  ]
+}

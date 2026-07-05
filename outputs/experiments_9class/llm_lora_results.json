@@ -1,0 +1,35 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "family": "llm_lora",
+  "method": "LoRA fine-tune (Qwen2.5-0.5B-Instruct, r=64)",
+  "lora_r": 64,
+  "lora_alpha": 128,
+  "epochs": 3,
+  "full_train": true,
+  "train_samples": 18338,
+  "val_samples": 0,
+  "eval_samples": 29978,
+  "full_test": true,
+  "train_seconds": 2071.4,
+  "infer_seconds": 459.6,
+  "adapter_dir": "releases/llm_lora_qwen05b_r64/checkpoints/best_adapter",
+  "val": {
+    "cat_macro_f1": null,
+    "cat_weighted_f1": null
+  },
+  "test": {
+    "cat_macro_f1": 0.5881,
+    "cat_weighted_f1": 0.7333
+  },
+  "categories": [
+    "Any Other Cyber Crime",
+    "Child Pornography CPChild Sexual Abuse Material CSAM",
+    "Cryptocurrency Crime",
+    "Cyber Attack/ Dependent Crimes",
+    "Hacking  Damage to computercomputer system etc",
+    "Online Financial Fraud",
+    "Online and Social Media Related Crime",
+    "RapeGang Rape RGRSexually Abusive Content",
+    "Sexually Obscene material"
+  ]
+}

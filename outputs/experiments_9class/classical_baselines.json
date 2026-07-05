@@ -1,0 +1,160 @@
+{
+  "task": "category_only",
+  "dataset": "dataset_balanced_filtered",
+  "num_classes": 9,
+  "classes": [
+    "Any Other Cyber Crime",
+    "Child Pornography CPChild Sexual Abuse Material CSAM",
+    "Cryptocurrency Crime",
+    "Cyber Attack/ Dependent Crimes",
+    "Hacking  Damage to computercomputer system etc",
+    "Online Financial Fraud",
+    "Online and Social Media Related Crime",
+    "RapeGang Rape RGRSexually Abusive Content",
+    "Sexually Obscene material"
+  ],
+  "best_classical": {
+    "model": "LightGBM",
+    "features": "tfidf_svd300+ner",
+    "calibrated": false,
+    "test_macro_f1": 0.5013
+  },
+  "methods": [
+    {
+      "model": "LinearSVM",
+      "family": "classical",
+      "features": "tfidf",
+      "calibrated": false,
+      "fit_seconds": 3.26,
+      "val": {
+        "macro_f1": 0.5585159779142171,
+        "weighted_f1": 0.6701310487531507,
+        "accuracy": 0.6766630316248636
+      },
+      "test": {
+        "macro_f1": 0.4713,
+        "weighted_f1": 0.7298094785318018,
+        "accuracy": 0.715791580492361
+      }
+    },
+    {
+      "model": "LogisticRegression",
+      "family": "classical",
+      "features": "tfidf",
+      "calibrated": false,
+      "fit_seconds": 6.39,
+      "val": {
+        "macro_f1": 0.548917270194163,
+        "weighted_f1": 0.6480963321993161,
+        "accuracy": 0.6450381679389313
+      },
+      "test": {
+        "macro_f1": 0.548768044948874,
+        "weighted_f1": 0.7217185342189992,
+        "accuracy": 0.6944092334378544
+      }
+    },
+    {
+      "model": "MultinomialNB",
+      "family": "classical",
+      "features": "tfidf",
+      "calibrated": false,
+      "fit_seconds": 0.02,
+      "val": {
+        "macro_f1": 0.47995916923289605,
+        "weighted_f1": 0.6442477603841773,
+        "accuracy": 0.6717557251908397
+      },
+      "test": {
+        "macro_f1": 0.5547952149029403,
+        "weighted_f1": 0.7227521851238651,
+        "accuracy": 0.7184935619454267
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "classical",
+      "features": "tfidf_svd300",
+      "calibrated": false,
+      "fit_seconds": 14.33,
+      "val": {
+        "macro_f1": 0.5119911805924368,
+        "weighted_f1": 0.6679740779630409,
+        "accuracy": 0.6897491821155943
+      },
+      "test": {
+        "macro_f1": 0.4913,
+        "weighted_f1": 0.7270504545359509,
+        "accuracy": 0.7235305890986724
+      }
+    },
+    {
+      "model": "LogisticRegression",
+      "family": "classical",
+      "features": "tfidf_svd300+ner",
+      "calibrated": false,
+      "fit_seconds": 0.99,
+      "val": {
+        "macro_f1": 0.4922902869109762,
+        "weighted_f1": 0.6084936830614274,
+        "accuracy": 0.5954198473282443
+      },
+      "test": {
+        "macro_f1": 0.4714338002206153,
+        "weighted_f1": 0.6838581242105887,
+        "accuracy": 0.6482086863700046
+      }
+    },
+    {
+      "model": "LogisticRegression+calibrated",
+      "family": "classical",
+      "features": "tfidf_svd300+ner",
+      "calibrated": true,
+      "fit_seconds": 0.92,
+      "val": {
+        "macro_f1": 0.5297111571759743,
+        "weighted_f1": 0.6394473405871242,
+        "accuracy": 0.6275899672846238
+      },
+      "test": {
+        "macro_f1": 0.5365016844517748,
+        "weighted_f1": 0.7006277168553725,
+        "accuracy": 0.667289345520048
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "classical",
+      "features": "tfidf_svd300+ner",
+      "calibrated": false,
+      "fit_seconds": 15.12,
+      "val": {
+        "macro_f1": 0.49938318659932907,
+        "weighted_f1": 0.6575814689462829,
+        "accuracy": 0.6772082878953108
+      },
+      "test": {
+        "macro_f1": 0.5013,
+        "weighted_f1": 0.7298756084803799,
+        "accuracy": 0.7260324237774368
+      }
+    },
+    {
+      "model": "LinearSVM",
+      "family": "classical",
+      "features": "tfidf+ner_sparse",
+      "calibrated": false,
+      "fit_seconds": 8.22,
+      "val": {
+        "macro_f1": 0.5590404244950476,
+        "weighted_f1": 0.6767093074205209,
+        "accuracy": 0.6837513631406761
+      },
+      "test": {
+        "macro_f1": 0.4813,
+        "weighted_f1": 0.7330851792106342,
+        "accuracy": 0.7193275068383481
+      }
+    }
+  ]
+}

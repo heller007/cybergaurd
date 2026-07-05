@@ -1,0 +1,150 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "family": "llm_prompt",
+  "prompting": "logits_fewshot1",
+  "eval_samples": 1321,
+  "full_test": false,
+  "max_per_class": 150,
+  "load_seconds": 3.81,
+  "infer_seconds": 34.06,
+  "samples_per_second": 38.78,
+  "test": {
+    "cat_macro_f1": 0.0227,
+    "cat_weighted_f1": 0.0232
+  },
+  "categories": [
+    "Any Other Cyber Crime",
+    "Child Pornography CPChild Sexual Abuse Material CSAM",
+    "Cryptocurrency Crime",
+    "Cyber Attack/ Dependent Crimes",
+    "Hacking  Damage to computercomputer system etc",
+    "Online Financial Fraud",
+    "Online and Social Media Related Crime",
+    "RapeGang Rape RGRSexually Abusive Content",
+    "Sexually Obscene material"
+  ],
+  "sample_predictions": [
+    {
+      "text_preview": "our ex employee kiran n hacked our server got details of customers changed credentials of their bank accounts and sent m",
+      "true": "Hacking  Damage to computercomputer system etc",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "on at am in night i got a abusive call from a unknown number who knows my name on picking the call person who was a male",
+      "true": "Any Other Cyber Crime",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "victim received a call from suspect like as a sbi credit card customer care officer and told to victim increase credit c",
+      "true": "Online Financial Fraud",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "i never imagined something like this could happen to me, especially since i'm so cautious. but then i started noticing t",
+      "true": "Cyber Attack/ Dependent Crimes",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "a very serious matter i want to inform you few person running or involve in some very shamefull activities by using few ",
+      "true": "RapeGang Rape RGRSexually Abusive Content",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "name jidesh sharma addresh vedhani sitapura pin code ps pratap nagar dist jaipur email id officialjiteshgmailcom credit ",
+      "true": "Online Financial Fraud",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "this a fraud website runnig on all social media platform and making fraud in all over india the reveiws of this site pro",
+      "true": "Sexually Obscene material",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "from this facebook id sandhiya surya he is editing my mother photo and my brother photo using wrong bad words and editin",
+      "true": "Online and Social Media Related Crime",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "i met a person name madhu reddy on olx he posted an ad on olx saying that there is a skill india scheme which offers sc ",
+      "true": "Any Other Cyber Crime",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "i have contacted the person by seeing a olx typing job ad she told me about their company and collected rs as a deposit ",
+      "true": "Any Other Cyber Crime",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "we are sms provider we came to know that our server has been hacked and someone missed use our services we dont have any",
+      "true": "Hacking  Damage to computercomputer system etc",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "i had taken a loan from the loan application for some personal use i tried to pay and almost i paid approx lakh rupees a",
+      "true": "Hacking  Damage to computercomputer system etc",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "koi mera fake facebook account banaya hai aur woh mera pictures ko use kar raha hai galat way mai or usme galat trike sa",
+      "true": "Sexually Obscene material",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "the issue actually started when i got this email, which at first glance seemed like spam. i usually ignore such things, ",
+      "true": "Cyber Attack/ Dependent Crimes",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "i never imagined something like this could happen to me, especially since i'm so cautious. but then i started noticing t",
+      "true": "Cyber Attack/ Dependent Crimes",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "his name is harsh pandey he was a student of dav public school he used to talk dirty with under age girls online he trie",
+      "true": "Child Pornography CPChild Sexual Abuse Material CSAM",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "i never imagined something like this could happen to me, especially since i'm so cautious. but then i started noticing t",
+      "true": "Cyber Attack/ Dependent Crimes",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "madam i dont know how they got my whatsapp number they i have add me in a whats app group the group name is btc global t",
+      "true": "Cryptocurrency Crime",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "my friend mentioned something like this happened to them a few months ago, but i thought it was a one-off. then, suddenl",
+      "true": "Cyber Attack/ Dependent Crimes",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    },
+    {
+      "text_preview": "some random no contacted me for call girls services i ignore then from that no i see some pic received of me and my fami",
+      "true": "Sexually Obscene material",
+      "pred": "Any Other Cyber Crime",
+      "raw": "1"
+    }
+  ],
+  "model_size": "0.5B",
+  "note": "Zero-shot prompting fails; model collapses to class 1 (Any Other). Fine-tuning required."
+}

@@ -1,0 +1,39 @@
+{
+  "f1_threshold": 0.25,
+  "report_source": "outputs/logs_category/test_cat_report.json",
+  "dropped_categories": [
+    "Sexually Explicit Act",
+    "Online Gambling  Betting"
+  ],
+  "dropped_f1": {
+    "Sexually Explicit Act": 0.15435356200527706,
+    "Online Gambling  Betting": 0.1894150417827298
+  },
+  "num_categories": 9,
+  "train_before": 20229,
+  "train_after": 18338,
+  "test_before": 30640,
+  "test_after": 29978,
+  "remaining_categories": [
+    "Any Other Cyber Crime",
+    "Child Pornography CPChild Sexual Abuse Material CSAM",
+    "Cryptocurrency Crime",
+    "Cyber Attack/ Dependent Crimes",
+    "Hacking  Damage to computercomputer system etc",
+    "Online Financial Fraud",
+    "Online and Social Media Related Crime",
+    "RapeGang Rape RGRSexually Abusive Content",
+    "Sexually Obscene material"
+  ],
+  "train_category_counts": {
+    "Online and Social Media Related Crime": 4746,
+    "Online Financial Fraud": 4255,
+    "Cyber Attack/ Dependent Crimes": 3608,
+    "Hacking  Damage to computercomputer system etc": 1587,
+    "Sexually Obscene material": 1543,
+    "Any Other Cyber Crime": 1543,
+    "Cryptocurrency Crime": 465,
+    "Child Pornography CPChild Sexual Abuse Material CSAM": 350,
+    "RapeGang Rape RGRSexually Abusive Content": 241
+  }
+}

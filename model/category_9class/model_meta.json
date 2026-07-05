@@ -1,0 +1,21 @@
+{
+  "task": "category_classification",
+  "num_classes": 9,
+  "classes": [
+    "Any Other Cyber Crime",
+    "Child Pornography CPChild Sexual Abuse Material CSAM",
+    "Cryptocurrency Crime",
+    "Cyber Attack/ Dependent Crimes",
+    "Hacking  Damage to computercomputer system etc",
+    "Online Financial Fraud",
+    "Online and Social Media Related Crime",
+    "RapeGang Rape RGRSexually Abusive Content",
+    "Sexually Obscene material"
+  ],
+  "model_name": "google/muril-base-cased",
+  "use_ner": true,
+  "max_len": 256,
+  "metric": "cat_macro_f1",
+  "best_val_cat_macro_f1": 0.5754575172172939,
+  "epoch": 21
+}

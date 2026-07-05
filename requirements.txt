@@ -1,0 +1,9 @@
+# Inference + deploy UI only (~1 GB download for MuRIL weights from Drive)
+torch>=2.0.0
+transformers>=4.36.0
+numpy>=1.24.0
+scipy>=1.10.0
+safetensors>=0.4.0
+tokenizers>=0.15.0
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0

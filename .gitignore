@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# Weights & large artifacts — see WEIGHTS.md (Google Drive)
+model/**
+!model/category_9class/
+model/category_9class/**
+!model/category_9class/model_meta.json
+!model/category_9class/cat_thresholds.npy
+checkpoints/
+checkpoints_muril/
+*.pt
+*.safetensors
+*.tar.gz
+wandb/
+logs/
+*.nohup.log
+releases/**
+!releases/README.md
+
+# Experiment outputs — published metrics only
+outputs/**
+!outputs/experiments_9class/
+!outputs/experiments_9class/**
+
+# Local / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# User corrections from deploy UI
+data/feedback/
